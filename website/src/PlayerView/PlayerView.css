@@ -1,0 +1,64 @@
+.App {
+  color: white;
+  background-color: #282c34;
+}
+
+.title {
+  font-size: calc(20px + 2vmin);
+  font-weight: bold;
+}
+
+.body {
+  text-align: center;
+  font-family: monospace;
+
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(12px + 3vmin);
+  font-family: monospace;
+}
+
+.background {
+  background-image: url("https://as1.ftcdn.net/v2/jpg/02/08/71/84/1000_F_208718446_d2PSVDnzN3jLKMI71OgFy9IeiFhsHM9l.jpg");
+  background-repeat: no-repeat;                     /* Prevents the image from repeating */
+  background-position: center center;               /* Centers the image */
+  background-attachment: fixed;                     /* Keeps the image fixed during scrolling */
+  background-size: cover;
+  position: absolute;
+  min-height: 100vh;
+  min-width: 100vw;
+  z-index: -1;
+}
+
+.game {
+  margin-bottom: 50px;
+}
+
+.chatline {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.gg {
+  font-style: italic;
+  color: #eb2348;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
