@@ -1,9 +1,10 @@
 #!/bin/bash
 # Used to set the page branch for deployment
+# Run this and push to deploy the site
 set -e
 
 DEPLOY_BRANCH="gh-pages"
-BUILD_DIR="./website/build"
+BUILD_DIR="website/build"
 
 # Ensure the build directory exists
 if [ ! -d "$BUILD_DIR" ]; then
