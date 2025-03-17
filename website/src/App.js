@@ -13,8 +13,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<PlayerView number={number} />} />
-        <Route path="/player/:id" element={<PlayerView number={number} />} />
+        <Route path="/wall/" element={<PlayerView number={number} />} />
+        <Route path="/wall/player/:id" element={<PlayerView number={number} />} />
         <Route path="*" lement={<PlayerView number={number} />} />
       </Routes>
     </Router>
