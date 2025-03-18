@@ -32,7 +32,7 @@ function PlayerView(props) {
   var title = "Player #" + player;
   return (
     <div className="App">
-        <header className="title"><a href={"/?player="+player} style={{color: 'inherit'}}>{title}</a></header>
+        <header className="title"><a href={"/wall/?player="+player} style={{color: 'inherit'}}>{title}</a></header>
         <div className="body">
           {lines.map((line, index) => renderGame(line, index+1))}
         </div>
