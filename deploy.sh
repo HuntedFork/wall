@@ -3,19 +3,10 @@
 # Run this and push to deploy the site
 set -e
 
-DEPLOY_BRANCH="gh-pages"
+DEPLOY_DIR="docs"
 BUILD_DIR="website/build"
 
-# Ensure the build directory exists
-if [ ! -d "$BUILD_DIR" ]; then
-  echo "Error: Build directory '$BUILD_DIR' does not exist."
-  exit 1
-fi
+rm -rf ./docs
 
-# Delete the existing deploy branch if it exists locally
-git branch -D $DEPLOY_BRANCH 2>/dev/null || true
+mv website/build ./docs
 
-# Create a new branch from the build directory
-git subtree split --prefix $BUILD_DIR -b $DEPLOY_BRANCH
-
-echo "Branch '$DEPLOY_BRANCH' now contains only the contents of '$BUILD_DIR'."
